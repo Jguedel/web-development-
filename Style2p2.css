@@ -1,0 +1,50 @@
+body{
+  text-align: center;
+}
+div{
+
+  border: 1px solid pink;
+}
+table, th, td {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+th.t1{
+  background-color: grey;
+  color: white;
+}
+.time{
+  background-color: yellow;
+}
+td.one{
+  background-color: blue;
+}
+td.two{
+  background-color: red;
+}
+td.three{
+  background-color: pink;
+}
+td.four{
+  background-color: tan;
+}
+td.five{
+  background-color: orange;
+}
+td.six{
+  background-color: green;
+}
+p.name{
+  font-size: 40px;
+  text-align: left;
+}
+p.text{
+  font-size: 15px;
+  text-align: center;
+}

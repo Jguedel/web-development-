@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" lang="en">
+  <title>Final Assignment</title>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script type='text/javascript' src='assignment10.js'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- LOGIN PAGE -->
+  <div data-role="page" id="loginPage">
+    <div data-role="header">
+      <h1>Login to Fitness Aide</h1>
+    </div>
+    <div data-role="content">
+      <!-- DATA INPUTS  -->
+      Email: <input type='text' id="email"></input>
+      Password: <input type="password" id="password"></input><br>
+      <button onclick="login();">Log In</button>
+      <p><a href="#signUpPage" data-role="button">Sign Up</a></p>
+    </div>
+  </div>
+
+  <!-- SIGN UP PAGE -->
+  <div data-role="page" id="signUpPage">
+    <div data-role="header">
+      <h1>Sign Up for Fitness Aide</h1>
+    </div>
+    <div data-role="content">
+      <!-- DATA INPUTS  -->
+      First Name: <input type='text' id="firstName"></input>
+      Last Name: <input type='text' id="lastName"></input>
+      Email: <input type='text' id="emailT"></input>
+      Password (numeric values only): <input type="password" id="passwordT"></input>
+      <button onclick="signUp();">Sign Up</button>
+      <p><a href="#loginPage" data-role="button">Back to login</a></p>
+    </div>
+  </div>
+
+  <!-- WORKOUT PAGE -->
+  <div data-role="page" id="workoutPage">
+    <div data-role="header">
+      <h1>Welcome to Fitness Aide</h1>
+    </div>
+    <div data-role="content">
+      <!-- SELECT GROUP  -->
+      <fieldset>
+        <legend>Workout Type:</legend>
+        <select id="group">
+          <option>Quads</option>
+          <option>Hamstrings</option>
+          <option>Calves</option>
+          <option>Chest</option>
+        </select>
+      </fieldset>
+      <!-- SUBMIT BUTTON -->
+      <button onclick="EX();">Submit</button>
+      <div id="exercises">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

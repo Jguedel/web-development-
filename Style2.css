@@ -1,0 +1,25 @@
+body{
+  background-color: blue;
+  text-align: center;
+}
+div{
+  background-color: white;
+  border-radius: 50px;
+  padding: 20px;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: grey;
+  color: white;
+  border-radius: 25px;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+p{
+  text-align: center;
+  font-size: 100px;
+  font-style: bold;
+}

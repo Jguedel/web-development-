@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wages App</title>
+  <!-- Download jQuery Libraries from CDNs. Includes Mobile CSS and core JavaScript files -->
+  <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script type='text/javascript' src='JS/assignment5pt1.js'></script>
+  <link rel="stylesheet" href="CSS/assignment5pt1.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="content">
+      <div class="collector">
+      <p id="results"> units: </P>
+      <input type='number' name="units" id='units' min='0' max='500' placeholder='0'>
+      </div
+      <div id="result"> </div>
+      <label for="inches">Inches:</label>
+      <div class="box">
+        <span class="text">Convert to:</span>
+      <div class="radio-inline">
+        <input type='radio' name="measure" id='inches' onclick="changeinch()">
+        <label for="centimeters">Centimeters:</label>
+        <input type='radio' name="measure" id='centimeters' onclick="changeCM()">
+      </div>
+    </div>
+      <button onclick="convert();">
+        Convert
+      </button>
+      <br>
+      <p id="ans">The answer will be displayed here</p>
+
+    </div>
+  </div>
+</body>
+</html>

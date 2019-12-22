@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/assignment5pt2.js"></script>
+        <title>Assignment 5 Part 2</title>
+    </head>
+
+    <body onload="draw()">
+        <div data-role="page">
+            <div data-role="header">
+                <h1>Color of Green Circles</h1>
+            </div>
+
+            <div data-role="content">
+                <label for="color">Green:</label>
+                <input type="range" name="color" id="color" min="1" max="245" placeholder="0">
+
+                <!-- BUTTON TO CHANGE GREEN--->
+                <button onClick ="changeColor()">Make Circles</button>
+
+                <!-- CREATE CANVAS-->
+                <canvas id="canvas" height="600" width="600"></canvas>
+            </div>
+        </div>
+    </body>
+</html>
